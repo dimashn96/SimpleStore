@@ -1,0 +1,7 @@
+{
+    "config": {
+        "phones" : "data/phones.json",
+        "tablets" : "data/tablets.json",
+        "notebooks" : "data/notebooks.json"
+    }
+}

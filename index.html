@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="catalogApp">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/css/style.css">
+        <script src="app/lib/angular.min.js"></script>
+        <script src="app/lib/angular-route.min.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/controllers/PhonesController.js"></script>
+        <script src="app/controllers/TabletsController.js"></script>
+        <script src="app/controllers/NotebooksController.js"></script>
+        <script src="app/controllers/PaginationController.js"></script>
+        <script src="app/services/dataService.js"></script>
+        <script src="app/services/paginationService.js"></script>
+        <title>Catalog</title>
+    </head>
+    <body>
+
+        <div id="menu">
+            <ul>
+                <li><a href="#!phones">Телефоны</a></li>
+                <li><a href="#!tablets">Планшеты</a></li>
+                <li><a href="#!notebooks">Ноутбуки</a></li>
+            </ul>
+        </div>
+
+        <div id="main" ng-controller="PaginationController">
+            <ng-view></ng-view>
+        </div>
+
+    </body>
+</html>

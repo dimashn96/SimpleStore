@@ -1,0 +1,12 @@
+<div id="pagination">
+    <div id="l1">
+        <button ng-disabled="firstPage()" ng-click="pageBack()">Prev</button>
+        <span id="currentPage">{{currentPage()+1}} of {{numberOfPages()}}</span>
+        <button ng-disabled="lastPage()" ng-click="pageForward()">Next</button>
+    </div>
+    <div id="l2">
+        <button ng-click="setItemsPerPage(3)">3</button>
+        <button ng-click="setItemsPerPage(6)">6</button>
+        <button ng-click="setItemsPerPage(12)">12</button>
+    </div>
+</div>

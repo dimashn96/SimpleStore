@@ -1,0 +1,14 @@
+<ul id="preView">
+    <li ng-repeat="item in items | startFrom: startingItem() | limitTo: itemsPerPage()">
+        <a href="#!phones/{{item.id}}">
+            <div class="image">
+                <img ng-src="img/phones/{{item.id}}/0.jpg">
+            </div>
+            <div class="label">
+                <p>{{item.company}}&nbsp;{{item.model}}</p>
+                <p>{{item.price}}$</p>
+            </div>
+        </a>
+    </li>
+</ul>
+<ng-include src="'views/pagination.html'"></ng-include>
